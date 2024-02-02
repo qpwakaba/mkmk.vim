@@ -9,7 +9,7 @@ def Init_markers()
   endif
   const markers = split('abcdefghijklmnopqrstuvwxyz' .. 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' .. '0123456789' .. '[]<>''`"^.(){}', '\zs')
   for c in markers
-    sign_define(sign_name_prefix .. c, { "text": " " .. c })
+    sign_define(sign_name_prefix .. c, { "text": "`" .. c })
   endfor
   initialized = 1
 enddef
