@@ -15,7 +15,7 @@ def Mkmk_command_mk()
     "bufnr": bufnr(),
     "group": autocmd_group,
     "event": autocmd_events,
-    "cmd": "Mkmk"
+    "cmd": "call mkmk.Update_marks()"
   }])
 
   mkmk.Update_marks()
